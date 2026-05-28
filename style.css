@@ -1,0 +1,163 @@
+body {
+    margin: 1rem auto;
+    padding: 3rem;
+    font-family: sans-serif;
+    /* background-color: black; */
+    color: gold;
+}
+header {
+    width: 50%;
+    margin: 1em auto;
+    text-align: center;
+     
+}
+main {
+    
+     
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 0.85em;
+    color: rgb(224, 132, 169);
+}
+#statement {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 3px 2px 4px 2px gray;
+    padding: 1rem;
+    font-size: 0.95em;
+    text-align: center;
+    margin: 1rem 0px;
+    min-height: 2em;
+    color: rgb(218, 189, 26);
+}
+#explanation {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 3px 2px 4px 2px gray;
+    padding: 1rem;
+    font-size: 0.85em;
+    text-align: center;
+    margin: 1.5rem 0px;
+    min-height: 2em;
+    color: rgb(175, 133, 168);
+}
+#options {
+     width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+button:hover:not(:disabled){
+    background-color: rgb(185, 171, 95);
+}
+button {
+    padding: 0.5rem;
+    font-size: medium;
+    border-radius: 5px;
+    /* background-color: black; */
+    color: rgb(202, 176, 27);
+    box-shadow: 2px 2px 2px 2px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;cursor: pointer;
+    
+
+    
+}
+.correct {
+    background-color: lightgreen;
+}
+.incorrect {
+    background-color:  #F08080
+}
+#refreshbtn{
+    width: 40%;
+    margin: 0 auto; 
+}
+@media (min-width: 375px) {
+    p{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 425px) {
+    p{
+         font-size: small;
+    }
+}
+
+@media (min-width: 768px) {
+     #statement {
+    width: 80%;
+     
+}
+#options {
+     width: 40%;
+     gap: 1em;
+    
+}
+button{
+    padding-block: 0.6em;
+}
+
+#explanation{
+    font-size: 1.3em;
+}
+
+}
+
+@media (min-width: 1024px) {
+    h1{
+    font-size: 3.5em;
+}
+    p{
+    font-size: 1em;
+} 
+    #statement {
+    width: 90%;
+    font-size: 1.5em;
+     
+}
+#options {
+     width: 40%;
+     gap: 1.5em;
+     
+}
+button{
+    padding-block: 1em;
+   font-size: 1.4em;
+}
+}
+
+@media (min-width: 1440px) {
+    
+    #statement {
+    width: 70%;
+    font-size: 1.5em;
+     
+}
+#options {
+     width: 30%;
+     gap: 1.5em;
+    
+}
+button{
+    padding-block: 1em;
+    
+}
+#explanation{
+    font-size: 1.5em;
+    width: 70%;
+}
+}
